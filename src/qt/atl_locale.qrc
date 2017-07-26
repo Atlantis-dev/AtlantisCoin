@@ -1,0 +1,20 @@
+<!DOCTYPE RCC><RCC version="1.0">
+    <qresource prefix="/translations">
+        <file alias="bg">locale/atl_bg.qm</file>
+        <file alias="de">locale/atl_de.qm</file>
+        <file alias="en">locale/atl_en.qm</file>
+        <file alias="es">locale/atl_es.qm</file>
+        <file alias="fi">locale/atl_fi.qm</file>
+        <file alias="fr">locale/atl_fr.qm</file>
+        <file alias="it">locale/atl_it.qm</file>
+        <file alias="ja">locale/atl_ja.qm</file>
+        <file alias="pl">locale/atl_pl.qm</file>
+        <file alias="pt">locale/atl_pt.qm</file>
+        <file alias="ru">locale/atl_ru.qm</file>
+        <file alias="sk">locale/atl_sk.qm</file>
+        <file alias="sv">locale/atl_sv.qm</file>
+        <file alias="vi">locale/atl_vi.qm</file>
+        <file alias="zh_CN">locale/atl_zh_CN.qm</file>
+        <file alias="zh_TW">locale/atl_zh_TW.qm</file>
+    </qresource>
+</RCC>

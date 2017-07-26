@@ -1,0 +1,22 @@
+[Unit]
+Description=Atl's distributed currency daemon
+After=network.target
+
+[Service]
+User=atlcore
+Group=atlcore
+
+Type=forking
+PIDFile=/var/lib/atld/atld.pid
+ExecStart=/usr/bin/atld -daemon -pid=/var/lib/atld/atld.pid \
+-conf=/etc/atlcore/atl.conf -datadir=/var/lib/atld -disablewallet
+
+Restart=always
+PrivateTmp=true
+TimeoutStopSec=60s
+TimeoutStartSec=2s
+StartLimitInterval=120s
+StartLimitBurst=5
+
+[Install]
+WantedBy=multi-user.target

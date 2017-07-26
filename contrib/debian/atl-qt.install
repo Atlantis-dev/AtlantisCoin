@@ -1,0 +1,6 @@
+usr/local/bin/atl-qt usr/bin
+share/pixmaps/atl32.xpm usr/share/pixmaps
+share/pixmaps/atl16.xpm usr/share/pixmaps
+share/pixmaps/atl128.png usr/share/pixmaps
+debian/atl-qt.desktop usr/share/applications
+debian/atl-qt.protocol usr/share/kde4/services/

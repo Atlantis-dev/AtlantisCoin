@@ -1,0 +1,68 @@
+Source: atl
+Section: utils
+Priority: optional
+Maintainer: Holger Schinzel <holger@atl.org>
+Uploaders: Holger Schinzel <holger@atl.org>
+Build-Depends: debhelper,
+ devscripts,
+ automake,
+ libtool,
+ bash-completion,
+ libdb4.8++-dev,
+ libssl-dev,
+ pkg-config,
+ libevent-dev,
+ libboost-system1.48-dev | libboost-system-dev (>> 1.35),
+ libboost-filesystem1.48-dev | libboost-filesystem-dev (>> 1.35),
+ libboost-program-options1.48-dev | libboost-program-options-dev (>> 1.35),
+ libboost-thread1.48-dev | libboost-thread-dev (>> 1.35),
+ libboost-test1.48-dev | libboost-test-dev (>> 1.35),
+ libboost-chrono1.48-dev | libboost-chrono-dev (>> 1.35),
+ qt4-qmake,
+ libqt4-dev,
+ libqrencode-dev,
+ libprotobuf-dev, protobuf-compiler,
+ python
+Standards-Version: 3.9.2
+Homepage: https://www.atl.org/
+Vcs-Git: git://github.com/atlpay/atl.git
+Vcs-Browser: https://github.com/atlpay/atl
+
+Package: atld
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}
+Description: peer-to-peer network based digital currency - daemon
+ Atl is an experimental new digital currency that enables anonymous, instant
+ payments to anyone, anywhere in the world. Atl uses peer-to-peer
+ technology to operate with no central authority: managing transactions
+ and issuing money are carried out collectively by the network. Atl Core
+ is the name of the open source software which enables the use of this currency.
+ .
+ This package provides the daemon, atld, and the CLI tool
+ atl-cli to interact with the daemon.
+
+Package: atl-qt
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}
+Description: peer-to-peer network based digital currency - Qt GUI
+ Atl is an experimental new digital currency that enables anonymous, instant
+ payments to anyone, anywhere in the world. Atl uses peer-to-peer
+ technology to operate with no central authority: managing transactions
+ and issuing money are carried out collectively by the network. Atl Core
+ is the name of the open source software which enables the use of this currency.
+ .
+ This package provides Atl-Qt, a GUI for Atl based on Qt.
+
+Package: atl-tx
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}
+Description: peer-to-peer digital currency - standalone transaction tool
+ Atl is an experimental new digital currency that enables anonymous, instant
+ payments to anyone, anywhere in the world. Atl uses peer-to-peer
+ technology to operate with no central authority: managing transactions
+ and issuing money are carried out collectively by the network. Atl Core
+ is the name of the open source software which enables the use of this currency.
+ .
+ This package provides atl-tx, a command-line transaction creation
+ tool which can be used without a atl daemon.  Some means of
+ exchanging minimal transaction data with peers is still required.

@@ -1,0 +1,12 @@
+[Desktop Entry]
+Encoding=UTF-8
+Name=Atl
+Comment=Atl P2P Cryptocurrency
+Comment[fr]=Atl, monnaie virtuelle cryptographique pair à pair
+Comment[tr]=Atl, eşten eşe kriptografik sanal para birimi
+Exec=atl-qt %u
+Terminal=false
+Type=Application
+Icon=atl128
+MimeType=x-scheme-handler/atl;
+Categories=Office;Finance;
